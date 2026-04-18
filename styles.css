@@ -49,12 +49,12 @@
 }
 
 .snow-photo {
-  background-image: url('images/snow-montain.jpg');
+  background-image: url('images/skidoo-rider.jpg');
   background-color: #0d1829;
 }
 
 .dirt-photo {
-  background-image: url('images/moto-camino.jpg');
+  background-image: url('images/ktm-creek.jpg');
   background-color: #1a1008;
 }
 
@@ -103,13 +103,101 @@
 }
 
 .gallery-road {
-  background-image: url('images/moto-camino.jpg');
+  background-image: url('images/riders-sunset.jpg');
   background-color: #3a3a2a;
 }
 
 .gallery-snow-peak {
   background-image: url('images/snow-montain.jpg');
   background-color: #1a2a4a;
+}
+
+/* ============================================
+   FLEET SECTION
+   ============================================ */
+.flota {
+  padding: 0;
+  background: var(--dark2);
+}
+
+.flota-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  height: 520px;
+}
+
+.flota-item {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.flota-item::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.75) 0%, transparent 50%);
+  transition: background 0.3s;
+}
+
+.flota-item:hover::before {
+  background: linear-gradient(to top, rgba(0,0,0,0.5) 0%, transparent 40%);
+}
+
+.flota-item:hover .flota-img {
+  transform: scale(1.04);
+}
+
+.flota-img {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.5s ease;
+}
+
+.flota-caption {
+  position: absolute;
+  bottom: 28px;
+  left: 28px;
+  z-index: 2;
+}
+
+.flota-caption-tag {
+  display: block;
+  font-size: 0.65rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+
+.flota-snow-tag { color: var(--snow); }
+.flota-dirt-tag { color: var(--dirt); }
+.flota-road-tag { color: var(--gold); }
+
+.flota-caption-name {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.6rem;
+  letter-spacing: 2px;
+  color: var(--white);
+  line-height: 1;
+}
+
+/* WHY — with background image */
+.why {
+  position: relative;
+  overflow: hidden;
+}
+
+.why-bg {
+  position: absolute;
+  inset: 0;
+  background-image: url('images/riders-sunset.jpg');
+  background-size: cover;
+  background-position: center 30%;
+  opacity: 0.08;
 }
 
 .gallery-caption {
@@ -1027,6 +1115,24 @@ body {
    RESPONSIVE
    ============================================ */
 @media (max-width: 768px) {
+  .flota-grid {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+
+  .flota-item {
+    height: 280px;
+  }
+
+  .gallery-strip {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+
+  .gallery-item {
+    height: 220px;
+  }
+
   .nav {
     padding: 16px 20px;
   }
