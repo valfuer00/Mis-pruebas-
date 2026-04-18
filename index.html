@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vail Boutique Rental — Snow Bikes & Dirt Bikes</title>
+  <title>Vail Boutique Rental — Snow Bikes & Dirt Bikes en Vail, Colorado</title>
   <link rel="stylesheet" href="styles.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -16,33 +16,25 @@
     <div class="nav-logo">VAIL BOUTIQUE RENTAL</div>
     <div class="nav-links">
       <a href="#rides">Rides</a>
-      <a href="#pricing">Pricing</a>
-      <a href="#contact" class="nav-cta">Book Now</a>
+      <a href="#lugares">Lugares</a>
+      <a href="#precios">Precios</a>
+      <a href="#contacto" class="nav-cta">Reservar</a>
     </div>
   </nav>
 
   <!-- HERO -->
   <section class="hero">
     <div class="hero-bg">
+      <div class="hero-img" style="background-image: url('images/hero-invierno.jpg')"></div>
       <div class="hero-overlay"></div>
-      <div class="snowflakes" aria-hidden="true">
-        <div class="snowflake">❄</div>
-        <div class="snowflake">❄</div>
-        <div class="snowflake">❄</div>
-        <div class="snowflake">❄</div>
-        <div class="snowflake">❄</div>
-        <div class="snowflake">❄</div>
-        <div class="snowflake">❄</div>
-        <div class="snowflake">❄</div>
-      </div>
     </div>
     <div class="hero-content">
       <span class="hero-tag">Vail, Colorado</span>
-      <h1 class="hero-title">RIDE THE<br /><span class="hero-accent">MOUNTAIN.</span><br />ANY SEASON.</h1>
-      <p class="hero-sub">Snow bikes in winter. Dirt bikes in summer.<br />Pure adrenaline. All year round.</p>
+      <h1 class="hero-title">LA MONTAÑA<br /><span class="hero-accent">ES TUYA.</span><br />TODO EL AÑO.</h1>
+      <p class="hero-sub">Snow bikes en invierno. Dirt bikes en verano.<br />Aventura sin límites en las Rockies.</p>
       <div class="hero-buttons">
-        <a href="#contact" class="btn btn-primary">Book a Ride</a>
-        <a href="#rides" class="btn btn-ghost">See Our Fleet</a>
+        <a href="#contacto" class="btn btn-primary">Reservar Ahora</a>
+        <a href="#rides" class="btn btn-ghost">Ver las Motos</a>
       </div>
     </div>
     <div class="hero-scroll">
@@ -51,80 +43,184 @@
     </div>
   </section>
 
-  <!-- SEASON TOGGLE / RIDES -->
+  <!-- INTRO BAND -->
+  <div class="intro-band">
+    <div class="intro-band-inner">
+      <span>Snow Bikes ❄</span>
+      <span class="band-dot">·</span>
+      <span>Dirt Bikes ☀</span>
+      <span class="band-dot">·</span>
+      <span>Vail, Colorado</span>
+      <span class="band-dot">·</span>
+      <span>$300 / día</span>
+      <span class="band-dot">·</span>
+      <span>Toda la temporada</span>
+    </div>
+  </div>
+
+  <!-- RIDES -->
   <section class="rides" id="rides">
     <div class="container">
       <div class="section-header">
-        <h2 class="section-title">TWO SEASONS.<br />ONE OBSESSION.</h2>
-        <p class="section-sub">The mountain doesn't stop — neither do we.</p>
+        <h2 class="section-title">DOS TEMPORADAS.<br />UNA OBSESIÓN.</h2>
+        <p class="section-sub">La montaña no para — nosotros tampoco.</p>
       </div>
 
       <div class="rides-grid">
 
         <!-- SNOW BIKES -->
         <div class="ride-card ride-snow">
-          <div class="ride-card-bg">
-            <div class="ride-season-badge">WINTER</div>
-            <div class="ride-icon">
-              <svg viewBox="0 0 80 50" fill="none" xmlns="http://www.w3.org/2000/svg" width="120">
-                <ellipse cx="15" cy="42" rx="8" ry="6" fill="#e8f4ff" stroke="#4a9eff" stroke-width="2"/>
-                <ellipse cx="62" cy="42" rx="8" ry="6" fill="#e8f4ff" stroke="#4a9eff" stroke-width="2"/>
-                <rect x="10" y="30" width="55" height="10" rx="3" fill="#f5b800"/>
-                <rect x="8" y="35" width="60" height="5" rx="2" fill="#e0a800"/>
-                <path d="M25 30 L30 12 L55 12 L58 30" fill="#1a1a2e" stroke="#4a9eff" stroke-width="1.5"/>
-                <rect x="30" y="8" width="25" height="6" rx="3" fill="#4a9eff"/>
-                <circle cx="38" cy="11" r="2" fill="#fff"/>
-                <path d="M8 36 L6 42" stroke="#4a9eff" stroke-width="2" stroke-linecap="round"/>
-                <path d="M72 36 L74 42" stroke="#4a9eff" stroke-width="2" stroke-linecap="round"/>
-              </svg>
-            </div>
+          <div class="ride-card-photo snow-photo">
+            <div class="ride-season-badge">❄ INVIERNO</div>
+            <div class="ride-photo-overlay"></div>
           </div>
           <div class="ride-card-body">
             <h3 class="ride-name">Snow Bikes</h3>
-            <p class="ride-desc">Carve through fresh powder in the Vail backcountry. Our Ski-Doo sleds handle everything from groomed trails to deep untracked snow. No experience needed — just the will to shred.</p>
+            <p class="ride-desc">Bajadas en nieve virgen, bosques nevados y el backcountry de Vail sin restricciones. Nuestras Ski-Doo MXZ te llevan a lugares donde los esquiadores no llegan. Sin experiencia previa necesaria — solo las ganas de shredear.</p>
             <ul class="ride-features">
-              <li><span class="feature-dot snow-dot"></span>Ski-Doo MXZ fleet</li>
-              <li><span class="feature-dot snow-dot"></span>Backcountry & trails</li>
-              <li><span class="feature-dot snow-dot"></span>Helmet & gear included</li>
-              <li><span class="feature-dot snow-dot"></span>All skill levels welcome</li>
+              <li><span class="feature-dot snow-dot"></span>Flota Ski-Doo MXZ</li>
+              <li><span class="feature-dot snow-dot"></span>Backcountry y senderos</li>
+              <li><span class="feature-dot snow-dot"></span>Casco y equipo incluido</li>
+              <li><span class="feature-dot snow-dot"></span>Todos los niveles</li>
             </ul>
-            <a href="#contact" class="btn btn-snow">Book Snow Bike</a>
+            <a href="#contacto" class="btn btn-snow">Reservar Snow Bike</a>
           </div>
         </div>
 
         <!-- DIRT BIKES -->
         <div class="ride-card ride-dirt">
-          <div class="ride-card-bg dirt-bg">
-            <div class="ride-season-badge dirt-badge">SUMMER</div>
-            <div class="ride-icon">
-              <svg viewBox="0 0 80 55" fill="none" xmlns="http://www.w3.org/2000/svg" width="120">
-                <circle cx="14" cy="42" r="9" fill="none" stroke="#ff6b2b" stroke-width="3"/>
-                <circle cx="14" cy="42" r="3" fill="#ff6b2b"/>
-                <circle cx="63" cy="42" r="9" fill="none" stroke="#ff6b2b" stroke-width="3"/>
-                <circle cx="63" cy="42" r="3" fill="#ff6b2b"/>
-                <path d="M14 33 L25 20 L50 20 L63 33" stroke="#ff6b2b" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-                <path d="M25 20 L28 33 L50 33 L50 20" fill="#2d2d2d" stroke="#ff6b2b" stroke-width="1.5"/>
-                <rect x="44" y="13" width="18" height="5" rx="2" fill="#ff6b2b"/>
-                <path d="M44 15 L38 15" stroke="#e0e0e0" stroke-width="2" stroke-linecap="round"/>
-                <path d="M14 33 L8 30" stroke="#ff6b2b" stroke-width="2" stroke-linecap="round"/>
-                <circle cx="35" cy="25" r="3" fill="#ff6b2b"/>
-              </svg>
-            </div>
+          <div class="ride-card-photo dirt-photo">
+            <div class="ride-season-badge dirt-badge">☀ VERANO</div>
+            <div class="ride-photo-overlay dirt-overlay"></div>
           </div>
           <div class="ride-card-body">
             <h3 class="ride-name dirt-name">Dirt Bikes</h3>
-            <p class="ride-desc">When the snow melts, the real fun begins. Tear through Vail's mountain trails on our dirt bikes. Rocky terrain, forest paths, and open fields — the summer backcountry is yours to explore.</p>
+            <p class="ride-desc">Cuando se derrite la nieve, empieza la mejor temporada. Senderos de montaña, bosques de pino y pasos a más de 3,500 metros. Las Rockies en verano son otro mundo — y las motos son la mejor manera de vivirlo.</p>
             <ul class="ride-features">
-              <li><span class="feature-dot dirt-dot"></span>Top-tier MX bikes</li>
-              <li><span class="feature-dot dirt-dot"></span>Mountain trail network</li>
-              <li><span class="feature-dot dirt-dot"></span>Safety gear provided</li>
-              <li><span class="feature-dot dirt-dot"></span>Guided routes available</li>
+              <li><span class="feature-dot dirt-dot"></span>Motos MX de primer nivel</li>
+              <li><span class="feature-dot dirt-dot"></span>Red de senderos de montaña</li>
+              <li><span class="feature-dot dirt-dot"></span>Equipo de seguridad incluido</li>
+              <li><span class="feature-dot dirt-dot"></span>Rutas recomendadas</li>
             </ul>
-            <a href="#contact" class="btn btn-dirt">Book Dirt Bike</a>
+            <a href="#contacto" class="btn btn-dirt">Reservar Dirt Bike</a>
           </div>
         </div>
 
       </div>
+    </div>
+  </section>
+
+  <!-- GALLERY STRIP -->
+  <section class="gallery-strip">
+    <div class="gallery-item gallery-valley">
+      <div class="gallery-caption">Valle de montaña · Verano</div>
+    </div>
+    <div class="gallery-item gallery-road">
+      <div class="gallery-caption">Camino de las Rockies</div>
+    </div>
+    <div class="gallery-item gallery-snow-peak">
+      <div class="gallery-caption">Vail Pass · Invierno</div>
+    </div>
+  </section>
+
+  <!-- LUGARES -->
+  <section class="lugares" id="lugares">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Rutas y Destinos</span>
+        <h2 class="section-title">DÓNDE ANDAR.</h2>
+        <p class="section-sub">Los mejores spots de la montaña, de parte de los que los conocen de memoria.</p>
+      </div>
+
+      <div class="lugares-tabs">
+        <button class="tab-btn tab-active" onclick="switchTab('invierno')">❄ Invierno</button>
+        <button class="tab-btn" onclick="switchTab('verano')">☀ Verano</button>
+      </div>
+
+      <!-- INVIERNO -->
+      <div class="lugares-grid" id="tab-invierno">
+        <div class="lugar-card">
+          <div class="lugar-number snow-number">01</div>
+          <div class="lugar-body">
+            <h3 class="lugar-name">Vail Pass</h3>
+            <span class="lugar-level snow-level">Principiante / Intermedio</span>
+            <p class="lugar-desc">El clásico de Vail. Rutas señalizadas, paisajes épicos y acceso directo desde el pueblo. Ideal para tu primera vez en snow bike — o para entrar en calor antes de ir al backcountry.</p>
+            <div class="lugar-meta">
+              <span>📍 10 min desde Vail</span>
+              <span>🏔 3,200 m</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="lugar-card">
+          <div class="lugar-number snow-number">02</div>
+          <div class="lugar-body">
+            <h3 class="lugar-name">Tennessee Pass</h3>
+            <span class="lugar-level snow-level">Intermedio / Avanzado</span>
+            <p class="lugar-desc">Backcountry remoto con nieve sin pisotear. Bosques de álamos nevados, silencio total y vistas que no olvidás. Este es el spot favorito de los que ya conocen Vail Pass de memoria.</p>
+            <div class="lugar-meta">
+              <span>📍 35 min desde Vail</span>
+              <span>🏔 3,500 m</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="lugar-card">
+          <div class="lugar-number snow-number">03</div>
+          <div class="lugar-body">
+            <h3 class="lugar-name">Holy Cross Wilderness</h3>
+            <span class="lugar-level snow-level">Solo Avanzado</span>
+            <p class="lugar-desc">Para los que buscan algo diferente. Terreno técnico, nieve profunda y un nivel de adrenalina que pocos spots pueden igualar. Salís sabiendo que fuiste al límite.</p>
+            <div class="lugar-meta">
+              <span>📍 45 min desde Vail</span>
+              <span>🏔 3,800 m</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- VERANO -->
+      <div class="lugares-grid hidden" id="tab-verano">
+        <div class="lugar-card">
+          <div class="lugar-number dirt-number">01</div>
+          <div class="lugar-body">
+            <h3 class="lugar-name">Shrine Pass Road</h3>
+            <span class="lugar-level dirt-level">Principiante / Intermedio</span>
+            <p class="lugar-desc">El camino de tierra más icónico de Vail. Vistas de 360° sobre las Rockies, sin tráfico y con el Gore Range de fondo. Perfecto para arrancar el día — o para tomarse el tiempo y disfrutarlo.</p>
+            <div class="lugar-meta">
+              <span>📍 15 min desde Vail</span>
+              <span>🏔 3,450 m</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="lugar-card">
+          <div class="lugar-number dirt-number">02</div>
+          <div class="lugar-body">
+            <h3 class="lugar-name">Cottonwood Pass</h3>
+            <span class="lugar-level dirt-level">Intermedio / Avanzado</span>
+            <p class="lugar-desc">Uno de los pasos de montaña más espectaculares de Colorado. Cruza la Divide Continental a más de 3,800 metros. Terreno variado, sin gente y con una bajada que no para de dar satisfacciones.</p>
+            <div class="lugar-meta">
+              <span>📍 1 hr desde Vail</span>
+              <span>🏔 3,810 m</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="lugar-card">
+          <div class="lugar-number dirt-number">03</div>
+          <div class="lugar-body">
+            <h3 class="lugar-name">Independence Pass</h3>
+            <span class="lugar-level dirt-level">Intermedio</span>
+            <p class="lugar-desc">Laguna alpina, tundra ártica y el punto más alto de la Ruta 82. El paisaje cambia cada kilómetro — de bosque denso a roca pura encima de la línea de árboles. Un clásico que no decepciona.</p>
+            <div class="lugar-meta">
+              <span>📍 1.5 hrs desde Vail</span>
+              <span>🏔 3,687 m</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
   </section>
 
@@ -133,27 +229,27 @@
     <div class="container">
       <div class="why-grid">
         <div class="why-text">
-          <span class="why-label">Why Vail Boutique Rental</span>
-          <h2 class="why-title">NOT YOUR AVERAGE<br />RENTAL SHOP.</h2>
-          <p class="why-desc">We're riders first, operators second. We know every trail, every powder stash, and every hidden line on this mountain. When you rent from us, you get more than a machine — you get insider access to Vail's best terrain.</p>
-          <p class="why-desc">Small fleet. Personal service. Big adventures.</p>
+          <span class="why-label">Por qué elegirnos</span>
+          <h2 class="why-title">NO ES UN<br />RENTAL MÁS.</h2>
+          <p class="why-desc">Somos riders antes que operadores. Conocemos cada sendero, cada bajada y cada spot secreto de esta montaña. Cuando rentás con nosotros, no solo te llevás la moto — te llevás el conocimiento de los que viven esto todos los días.</p>
+          <p class="why-desc">Flota chica. Atención personalizada. Aventura en grande.</p>
         </div>
         <div class="why-stats">
           <div class="stat-card">
             <div class="stat-number">$300</div>
-            <div class="stat-label">Per Day</div>
+            <div class="stat-label">Por Día</div>
           </div>
           <div class="stat-card">
             <div class="stat-number">2</div>
-            <div class="stat-label">Seasons of Riding</div>
+            <div class="stat-label">Temporadas</div>
           </div>
           <div class="stat-card">
-            <div class="stat-number">12K+</div>
-            <div class="stat-label">Feet of Mountain</div>
+            <div class="stat-number">3,800</div>
+            <div class="stat-label">Metros de Altura</div>
           </div>
           <div class="stat-card">
             <div class="stat-number">100%</div>
-            <div class="stat-label">Pure Adventure</div>
+            <div class="stat-label">Adrenalina Pura</div>
           </div>
         </div>
       </div>
@@ -161,62 +257,62 @@
   </section>
 
   <!-- PRICING -->
-  <section class="pricing" id="pricing">
+  <section class="pricing" id="precios">
     <div class="container">
       <div class="section-header">
-        <h2 class="section-title">SIMPLE PRICING.</h2>
-        <p class="section-sub">No hidden fees. No surprises. Just riding.</p>
+        <h2 class="section-title">PRECIOS SIMPLES.</h2>
+        <p class="section-sub">Sin cargos ocultos. Sin sorpresas. Solo andar.</p>
       </div>
 
       <div class="pricing-grid">
         <div class="pricing-card pricing-snow">
-          <div class="pricing-season">❄ Winter</div>
+          <div class="pricing-season">❄ Invierno</div>
           <h3 class="pricing-name">Snow Bike</h3>
           <div class="pricing-amount">
             <span class="pricing-dollar">$</span>
             <span class="pricing-number">300</span>
-            <span class="pricing-per">/ day</span>
+            <span class="pricing-per">/ día</span>
           </div>
           <ul class="pricing-includes">
-            <li>Full day rental (8 hrs)</li>
-            <li>Helmet included</li>
-            <li>Fuel included</li>
-            <li>Trail maps & briefing</li>
-            <li>WhatsApp support on the go</li>
+            <li>Renta de día completo (8 hrs)</li>
+            <li>Casco incluido</li>
+            <li>Gasolina incluida</li>
+            <li>Mapas y briefing de rutas</li>
+            <li>Soporte por WhatsApp en ruta</li>
           </ul>
-          <a href="#contact" class="btn btn-snow">Reserve Now</a>
+          <a href="#contacto" class="btn btn-snow">Reservar</a>
         </div>
 
         <div class="pricing-card pricing-dirt">
-          <div class="pricing-season">☀ Summer</div>
+          <div class="pricing-season">☀ Verano</div>
           <h3 class="pricing-name">Dirt Bike</h3>
           <div class="pricing-amount">
             <span class="pricing-dollar">$</span>
             <span class="pricing-number">300</span>
-            <span class="pricing-per">/ day</span>
+            <span class="pricing-per">/ día</span>
           </div>
           <ul class="pricing-includes">
-            <li>Full day rental (8 hrs)</li>
-            <li>Helmet & gloves included</li>
-            <li>Fuel included</li>
-            <li>Trail routes & maps</li>
-            <li>WhatsApp support on the go</li>
+            <li>Renta de día completo (8 hrs)</li>
+            <li>Casco y guantes incluidos</li>
+            <li>Gasolina incluida</li>
+            <li>Rutas y mapas de senderos</li>
+            <li>Soporte por WhatsApp en ruta</li>
           </ul>
-          <a href="#contact" class="btn btn-dirt">Reserve Now</a>
+          <a href="#contacto" class="btn btn-dirt">Reservar</a>
         </div>
       </div>
 
-      <p class="pricing-note">* Group discounts available. Contact us for multi-day rates.</p>
+      <p class="pricing-note">* Descuentos para grupos. Consultanos para tarifas de varios días.</p>
     </div>
   </section>
 
   <!-- CONTACT -->
-  <section class="contact" id="contact">
+  <section class="contact" id="contacto">
     <div class="container">
       <div class="contact-inner">
         <div class="contact-text">
-          <h2 class="contact-title">READY TO RIDE?</h2>
-          <p class="contact-sub">Hit us up on WhatsApp or email to check availability and lock in your day on the mountain.</p>
+          <h2 class="contact-title">¿LISTOS PARA ARRANCAR?</h2>
+          <p class="contact-sub">Escribinos por WhatsApp o email para revisar disponibilidad y agendar tu día en la montaña.</p>
           <p class="contact-location">📍 Vail, Colorado</p>
         </div>
         <div class="contact-buttons">
@@ -224,14 +320,14 @@
             <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
               <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
             </svg>
-            WhatsApp Us
+            WhatsApp
           </a>
           <a href="mailto:info@vailboutiquerental.com" class="contact-btn email-btn">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
               <polyline points="22,6 12,13 2,6"/>
             </svg>
-            Send an Email
+            Email
           </a>
         </div>
         <div class="contact-social">
@@ -251,7 +347,7 @@
     <div class="container">
       <div class="footer-inner">
         <div class="footer-logo">VAIL BOUTIQUE RENTAL</div>
-        <p class="footer-tagline">Ride the mountain. Any season.</p>
+        <p class="footer-tagline">La montaña es tuya. Todo el año.</p>
         <p class="footer-copy">© 2025 Vail Boutique Rental · Vail, Colorado</p>
       </div>
     </div>

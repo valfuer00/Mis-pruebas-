@@ -2,6 +2,256 @@
    VAIL BOUTIQUE RENTAL — styles.css
    ============================================ */
 
+/* ============================================
+   INTRO BAND
+   ============================================ */
+.intro-band {
+  background: var(--gold);
+  padding: 14px 0;
+  overflow: hidden;
+}
+
+.intro-band-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  color: var(--dark);
+}
+
+.band-dot {
+  opacity: 0.4;
+}
+
+/* ============================================
+   HERO IMAGE
+   ============================================ */
+.hero-img {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* ============================================
+   RIDE CARD PHOTOS
+   ============================================ */
+.ride-card-photo {
+  position: relative;
+  height: 240px;
+  background-size: cover;
+  background-position: center;
+}
+
+.snow-photo {
+  background-image: url('images/snow-montain.jpg');
+  background-color: #0d1829;
+}
+
+.dirt-photo {
+  background-image: url('images/moto-camino.jpg');
+  background-color: #1a1008;
+}
+
+.ride-photo-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, transparent 40%, rgba(10,14,26,0.7) 100%);
+}
+
+.dirt-overlay {
+  background: linear-gradient(to bottom, transparent 40%, rgba(26,16,8,0.7) 100%);
+}
+
+/* ============================================
+   GALLERY STRIP
+   ============================================ */
+.gallery-strip {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr;
+  height: 420px;
+}
+
+.gallery-item {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.gallery-item::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.25);
+  transition: background 0.3s;
+}
+
+.gallery-item:hover::before {
+  background: rgba(0,0,0,0.1);
+}
+
+.gallery-valley {
+  background-image: url('images/valle-verano.jpg');
+  background-color: #2d4a2d;
+}
+
+.gallery-road {
+  background-image: url('images/moto-camino.jpg');
+  background-color: #3a3a2a;
+}
+
+.gallery-snow-peak {
+  background-image: url('images/snow-montain.jpg');
+  background-color: #1a2a4a;
+}
+
+.gallery-caption {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.8);
+  font-weight: 500;
+}
+
+/* ============================================
+   LUGARES SECTION
+   ============================================ */
+.lugares {
+  padding: 120px 0;
+  background: var(--dark);
+  border-top: 1px solid rgba(255,255,255,0.05);
+}
+
+.section-label {
+  display: block;
+  font-size: 0.7rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 16px;
+}
+
+.lugares-tabs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 48px;
+  justify-content: center;
+}
+
+.tab-btn {
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.15);
+  color: var(--gray);
+  padding: 10px 28px;
+  border-radius: 30px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.25s;
+  font-family: 'Inter', sans-serif;
+}
+
+.tab-btn:hover {
+  border-color: rgba(255,255,255,0.4);
+  color: var(--white);
+}
+
+.tab-active {
+  background: var(--gold);
+  border-color: var(--gold);
+  color: var(--dark) !important;
+}
+
+.lugares-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.lugares-grid.hidden {
+  display: none;
+}
+
+.lugar-card {
+  background: var(--dark2);
+  border: 1px solid rgba(255,255,255,0.07);
+  border-radius: 12px;
+  padding: 32px;
+  transition: transform 0.3s, border-color 0.3s;
+}
+
+.lugar-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(245,184,0,0.2);
+}
+
+.lugar-number {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 3.5rem;
+  line-height: 1;
+  margin-bottom: 16px;
+  opacity: 0.5;
+}
+
+.snow-number { color: var(--snow); }
+.dirt-number { color: var(--dirt); }
+
+.lugar-name {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+  color: var(--white);
+}
+
+.lugar-level {
+  display: inline-block;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 3px 10px;
+  border-radius: 20px;
+  margin-bottom: 16px;
+}
+
+.snow-level {
+  background: rgba(74,158,255,0.15);
+  color: var(--snow);
+}
+
+.dirt-level {
+  background: rgba(255,107,43,0.15);
+  color: var(--dirt);
+}
+
+.lugar-desc {
+  color: var(--gray);
+  font-size: 0.875rem;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  font-weight: 300;
+}
+
+.lugar-meta {
+  display: flex;
+  gap: 16px;
+  font-size: 0.75rem;
+  color: var(--gray);
+  opacity: 0.7;
+}
+
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
