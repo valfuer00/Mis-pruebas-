@@ -103,7 +103,7 @@
 }
 
 .gallery-road {
-  background-image: url('images/riders-sunset.jpg');
+  background-image: url('IMG_0822.jpeg');
   background-color: #3a3a2a;
 }
 
@@ -194,7 +194,7 @@
 .why-bg {
   position: absolute;
   inset: 0;
-  background-image: url('images/riders-sunset.jpg');
+  background-image: url('IMG_0822.jpeg');
   background-size: cover;
   background-position: center 30%;
   opacity: 0.08;
