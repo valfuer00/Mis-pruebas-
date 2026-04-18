@@ -36,6 +36,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  filter: brightness(0.55);
 }
 
 /* ============================================
@@ -350,11 +351,11 @@
   --dark: #0a0e1a;
   --dark2: #111827;
   --dark3: #1c2333;
-  --snow: #4a9eff;
+  --snow: #7BA8C4;
   --snow-light: #e8f4ff;
-  --dirt: #ff6b2b;
+  --dirt: #e05a1e;
   --dirt-light: #fff0e8;
-  --gold: #f5b800;
+  --gold: #C8880A;
   --white: #ffffff;
   --gray: #8892a4;
   --light: #f0f4ff;
