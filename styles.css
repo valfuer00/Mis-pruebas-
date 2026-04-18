@@ -531,10 +531,11 @@ body {
 
 .hero-sub {
   font-size: 1.1rem;
-  color: var(--gray);
+  color: #ffffff;
   line-height: 1.7;
   margin-bottom: 40px;
-  font-weight: 300;
+  font-weight: 400;
+  text-shadow: 0 2px 12px rgba(0,0,0,0.9), 0 1px 4px rgba(0,0,0,0.8);
 }
 
 .hero-buttons {
